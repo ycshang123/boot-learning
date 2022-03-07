@@ -1,0 +1,12 @@
+GET http://localhost:8888/api/hello
+Accept: text/plain
+
+<> 2022-03-07T150805.200.txt
+
+###
+
+GET http://localhost:8888/api/hello
+Accept: text/plain
+
+###
+
