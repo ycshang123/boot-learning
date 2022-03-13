@@ -1,8 +1,9 @@
 package com.ycshang.boot.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.ycshang.boot.starter.service.Md5Service;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 /**
  * @program: spring-boot-learning
@@ -13,8 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api")
 public class HelloController {
-    @GetMapping(value = "/hello")
-    public String getHello() {
-        return "hello world";
+    @Resource
+    private Md5Service md5Service;
+
+    @GetMapping("/test")
+    public String getMD5() {
+        return "MD5加密结果为:" + md5Service.getMD5("hello-stater");
     }
+
+
 }
