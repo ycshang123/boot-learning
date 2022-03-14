@@ -1,0 +1,10 @@
+user:
+  name: ycshang
+  age: 22
+  book:
+#    book-name:
+#    price:
+#    time:
+    book-name: SpringBoot从入门到精通
+    price: 36
+    time: 2023-02-02 12:22:12
