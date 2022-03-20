@@ -23,3 +23,19 @@
 #        gender: female
 server:
   port: 8888
+#  jasypt加密的密钥
+spring:
+  # 数据库相关配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 这里加上后缀用来防止mysql乱码,serverTimezone=GMT%2b8设置时区
+    url: ENC(7FsOeAQoxdBIkqq1EvsU35XMjOiXE4XNfPcMzlmBfeE+qBeY5KGpceq+ziMP6OXStmhY+sgBaRp9Qn2Bcamj7PCCeU+kTs0qB2l9exOOJTgUyP2qsy3Qc0xcj4ZwwHPPCktM+HgZedz/2TjKfZ4GKB3V1inbkiDS7iRc2lTF2Ig=)
+    username: ENC(Zm5ASfRNc5YFFIYGjtC+Qg==)
+    password: ENC(HHqPSFfByXcZiLMCan4tZA==)
+mybatis:
+  type-aliases-package: com.ycshang.boot.config.mapper
+  mapper-locations:
+    - classpath:mapper/*.xml
+jasypt:
+  encryptor:
+    password: Y6M9fAJQdU7jNp5MW
