@@ -18,7 +18,6 @@ import org.springframework.context.annotation.ComponentScan;
 public class BootConfigApplication {
     public static void main(String[] args) {
         SpringApplication.run(BootConfigApplication.class, args);
-        log.info("服务启动成功");
     }
 
 }
